@@ -23,7 +23,7 @@ def http_bot(prompt):
         if chunk:
             data = json.loads(chunk.decode("utf-8"))
             output = data["text"][0]
-            yield output
+    yield output
 
 
 def build_demo():
